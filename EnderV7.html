@@ -1,0 +1,35 @@
+<html>
+    <Body>
+        <h1>Guess the number</h1>
+        <button onclick="myFunction()">Guess...</button>
+        <p id="demo"></p>
+        <script>
+            const myNumber = 1983;
+            const Limit = 1000000;
+            const toFarMore = 7987
+            const farMore = 4983;
+            const aLittleMore = 2983;
+            const farLess = 83;
+            const aLittleLess = 983;
+                function myFunction() {
+                    let number = prompt("Please enter a Number", "from 1 to 1000000");
+                    if (number == myNumber) {
+                        alert("You did it! ☺, whait, isn`t that the number of the year when...☻")
+                    } else if (number < myNumber) {
+                        alert("Fail, it must be a little bigger :v")
+                        myFuncction();
+                    } else if (number > myNumber && number > aLittleMore && number > farMore && number > toFarMore && number > Limit) {
+                        alert("THATS OUT OF LIMITS >:(")
+                        
+                    } else if (number > myNumber && number > aLittleMore && number > farMore && number > toFarMore) {
+                        alert("FAIL, THATS TOO FAR MORE")
+                    } else if (number > myNumber && number > aLittleMore && number > farMore)
+                    alert("FAIL, thats so far")
+                    
+                    else if (number > myNumber) {
+                        alert ("Fail, it must be a little smaller :v")
+                    }
+                } 
+        </script>
+    </Body>
+</html>
